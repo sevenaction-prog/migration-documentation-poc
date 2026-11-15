@@ -58,12 +58,19 @@ jobs:
           assert len(catalog['templates'] if isinstance(catalog,dict) else catalog)==9
           print('All nine Office assets and preview links present')
           PY
+      - name: Prepare minimal site payload
+        run: |
+          mkdir -p public/assets public/templates
+          cp index.html catalog.json README.md public/
+          cp assets/*.svg public/assets/
+          cp templates/*.docx templates/*.xlsx templates/*.pptx templates/*.csv templates/*.md public/templates/
+          touch public/.nojekyll
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: public
   deploy:
     environment:
       name: github-pages
