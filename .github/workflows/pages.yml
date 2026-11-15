@@ -1,14 +1,12 @@
-name: Deploy Document Atlas
+name: Build Document Atlas for Pages branch
 on:
   push:
     branches: [main]
   workflow_dispatch:
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 concurrency:
-  group: document-atlas-pages
+  group: document-atlas-publish
   cancel-in-progress: true
 jobs:
   build:
@@ -58,28 +56,21 @@ jobs:
           assert len(catalog['templates'] if isinstance(catalog,dict) else catalog)==9
           print('All nine Office assets and preview links present')
           PY
-      - name: Prepare minimal site payload
+      - name: Prepare branch-published site in docs/
         run: |
-          mkdir -p public/assets public/templates
-          cp index.html catalog.json README.md public/
-          cp assets/*.svg public/assets/
-          cp templates/*.docx templates/*.xlsx templates/*.pptx templates/*.csv templates/*.md public/templates/
-          touch public/.nojekyll
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
-        with:
-          enablement: true
-      - name: Upload static site
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: public
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          mkdir -p docs/assets docs/templates
+          cp index.html catalog.json README.md docs/
+          cp assets/*.svg docs/assets/
+          cp templates/*.docx templates/*.xlsx templates/*.pptx templates/*.csv templates/*.md docs/templates/
+          touch docs/.nojekyll
+      - name: Commit built static site to main branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/
+          if git diff --cached --quiet; then
+            echo "Site files unchanged."
+          else
+            git commit -m "Publish synthetic Office downloads and web app to docs/"
+            git push origin HEAD:main
+          fi
