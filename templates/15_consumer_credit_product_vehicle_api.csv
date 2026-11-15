@@ -1,0 +1,9 @@
+Record ID,Reference domain,Entity,Attribute,Example value,Authoritative owner,API action,Data validation,Consumer role,Status,Evidence
+P-001,Product,Product,product_id,PRD-EX-001,Product Data Owner,GET /api/v1/products,Unique nonblank ID,Simulation channel,RECOMMENDED,Synthetic example
+P-002,Product,Product,family_code,FAMILY-A,Product Data Owner,GET /api/v1/products,Controlled list,Distribution app,RECOMMENDED,Synthetic example
+P-003,Product,Product,availability_status,ACTIVE,Product Owner,GET /api/v1/products,Allowed lifecycle status,Application service,TO VALIDATE,Synthetic example
+P-004,Product,Product,valid_from,2026-01-01,Product Data Owner,GET /api/v1/products,Date type and time zone,Partner channel,TO VALIDATE,Synthetic example
+V-001,Vehicle,Vehicle,vehicle_ref,VEH-EX-001,Vehicle Data Owner,GET /api/v1/vehicles,Unique versioned reference,Dealer channel,RECOMMENDED,Synthetic example
+V-002,Vehicle,Vehicle,vehicle_category,CAT-A,Vehicle Data Owner,GET /api/v1/vehicles,Controlled category,Financing app,RECOMMENDED,Synthetic example
+V-003,Vehicle,Vehicle,energy_category,ENERGY-A,Vehicle Data Owner,GET /api/v1/vehicles,Valid catalog value,Reporting app,TO VALIDATE,Synthetic example
+V-004,Vehicle,Vehicle,reference_version,1.2,Vehicle Data Owner,GET /api/v1/vehicles,Monotonic version,Integration service,RECOMMENDED,Synthetic example
