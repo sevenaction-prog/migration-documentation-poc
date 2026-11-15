@@ -1,0 +1,7 @@
+Scope,Document category,Document family,Target SharePoint library
+Operational Scope,Operations,Active case / transaction,Operational Documents
+Operational Scope,Reference,Approved procedure,Reference & Templates
+Security Scope,Access management,Authorization record,Restricted Cases
+HR Scope,Employee administration,Signed employee document,Restricted Cases
+HSE Scope,Compliance,Audit report,Compliance & Audits
+Any scope,Archive,Closed historical file,Archive
