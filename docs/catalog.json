@@ -1,0 +1,157 @@
+[
+  {
+    "id": "arch-short",
+    "title": "Target SharePoint Architecture",
+    "type": "Markdown",
+    "file": "templates/01_target_sharepoint_architecture.md",
+    "purpose": "Short business-facing target architecture.",
+    "use": "After workshops, when architecture decisions need a concise functional deliverable.",
+    "sections": [
+      "Introduction",
+      "Architecture principles",
+      "Target libraries",
+      "Top metadata",
+      "Security",
+      "Navigation",
+      "Views",
+      "Decisions",
+      "Migration"
+    ]
+  },
+  {
+    "id": "req-detail",
+    "title": "Migration Requirements Template",
+    "type": "Markdown",
+    "file": "templates/02_migration_requirements_template.md",
+    "purpose": "Detailed requirements, governance and decision document.",
+    "use": "For full-scope analysis and implementation handoff.",
+    "sections": [
+      "AS-IS",
+      "Target architecture",
+      "Metadata",
+      "Process alignment",
+      "BRQ",
+      "Rules",
+      "Security",
+      "Migration",
+      "Acceptance",
+      "Governance"
+    ]
+  },
+  {
+    "id": "top7",
+    "title": "Target Solution — Top 7 Metadata",
+    "type": "CSV",
+    "file": "templates/03_solution_target_top7_metadata.csv",
+    "purpose": "Compact library-by-library target definition.",
+    "use": "For functional SharePoint teams that need implementation-ready metadata.",
+    "sections": [
+      "Target site",
+      "Library",
+      "Sub-process",
+      "Metadata",
+      "Type",
+      "Mandatory",
+      "Values"
+    ]
+  },
+  {
+    "id": "simple-map",
+    "title": "Simple Category / Family / Library Mapping",
+    "type": "CSV",
+    "file": "templates/04_simple_category_family_library_mapping.csv",
+    "purpose": "Simple transversal mapping.",
+    "use": "For steering, workshops and quick target orientation.",
+    "sections": [
+      "Scope",
+      "Category",
+      "Family",
+      "Target library"
+    ]
+  },
+  {
+    "id": "source-map",
+    "title": "Source-to-Target Mapping",
+    "type": "CSV",
+    "file": "templates/05_source_to_target_mapping.csv",
+    "purpose": "Adds exact source folder/path and migration action.",
+    "use": "For migration preparation and source traceability.",
+    "sections": [
+      "Source folder",
+      "Object type",
+      "Category",
+      "Family",
+      "Target",
+      "Action",
+      "Evidence"
+    ]
+  },
+  {
+    "id": "workshop",
+    "title": "Before / After Workshop Comparison",
+    "type": "CSV",
+    "file": "templates/06_workshop_before_after_comparison.csv",
+    "purpose": "Separates previously known items from workshop-confirmed or new items.",
+    "use": "For completeness checks and next-workshop preparation.",
+    "sections": [
+      "Known before",
+      "Workshop status",
+      "Contribution",
+      "Comparative reading",
+      "Post-workshop target"
+    ]
+  },
+  {
+    "id": "traceability",
+    "title": "Detailed Architecture & Traceability",
+    "type": "Markdown",
+    "file": "templates/07_detailed_architecture_traceability.md",
+    "purpose": "End-to-end traceability workbook structure.",
+    "use": "For complex scopes requiring BRQ, features, rules, acceptance and decision registers.",
+    "sections": [
+      "Architecture",
+      "Decisions",
+      "BRQ",
+      "Features",
+      "Rules",
+      "Process mapping",
+      "Acceptance",
+      "Stories",
+      "Open decisions"
+    ]
+  },
+  {
+    "id": "doc-level",
+    "title": "Detailed Document-Level Mapping",
+    "type": "CSV",
+    "file": "templates/08_detailed_document_level_mapping.csv",
+    "purpose": "Synthetic document-by-document mapping with source paths, process matching, evidence and migration actions.",
+    "use": "For detailed inventory qualification and migration reconciliation.",
+    "sections": [
+      "Document ID",
+      "AS-IS path",
+      "Business family",
+      "Process",
+      "Evidence",
+      "ROT",
+      "Archive"
+    ]
+  },
+  {
+    "id": "decision-deck",
+    "title": "Decision Workshop — Process Validation",
+    "type": "Markdown",
+    "file": "templates/09_decision_workshop_process_validation.md",
+    "purpose": "Ten-slide structure for a 60-minute process validation workshop.",
+    "use": "When business ownership and interfaces need formal decisions.",
+    "sections": [
+      "Scope",
+      "Reference",
+      "Process mapping",
+      "Interfaces",
+      "Arbitrations",
+      "Agenda",
+      "Decisions"
+    ]
+  }
+]

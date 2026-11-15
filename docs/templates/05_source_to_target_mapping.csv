@@ -1,0 +1,5 @@
+Scope,Source folder / path,Object type,Document category,Document family,Target SharePoint library,Migration action,Evidence status
+Operational Scope,"\\fileserver\department\operations\active",Folder,Operations,Active case / transaction,Operational Documents,Migrate after qualification,CONFIRMED
+Operational Scope,"\\fileserver\department\reference",Folder,Reference,Approved procedure,Reference & Templates,Migrate current authoritative version,RECOMMENDED
+HR Scope,"\\fileserver\hr\employee-admin",Folder,Employee administration,Signed employee document,Restricted Cases,Migrate after access validation,TO VALIDATE
+Any scope,"\\fileserver\department\archive",Folder,Archive,Closed historical file,Archive,Archive after retention validation,TO_VALIDATE

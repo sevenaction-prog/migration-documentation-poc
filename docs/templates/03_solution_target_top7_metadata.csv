@@ -1,0 +1,15 @@
+Target SharePoint site / space,SharePoint library,Sub-process,Metadata (Max 7),Type,Mandatory,Values
+[Target Site],Operational Documents,PROC-XX,DocumentType,Choice,Yes,"Case; Transaction; Report; Other"
+,,,BusinessCategory,Choice,Yes,"Category A; Category B; Other"
+,,,Status,Choice,Yes,"Draft; Active; Closed; Archived"
+,,,Owner,Person,Yes,
+,,,ReferenceDate,Date,No,
+,,,BusinessReference,Single line text,No,
+,,,Classification,Choice,No,"Standard; Restricted"
+[Target Site],Reference & Templates,PROC-XX,DocumentType,Choice,Yes,"Procedure; Template; Guide; Other"
+,,,TemplateType,Choice,No,
+,,,Version,Single line text,Yes,
+,,,Status,Choice,Yes,"Draft; Approved; Superseded"
+,,,Owner,Person,Yes,
+,,,ApprovalDate,Date,No,
+,,,Classification,Choice,No,"Standard; Restricted"
