@@ -1,0 +1,5 @@
+Detector ID,Product family,Control domain,Engine layer,Trigger,Input event type,Condition candidate,Exception,Result type,Proof reference,Validation protocol,Control owner,Status
+DET-001,Invoice Assurance,Approval chronology,ALGEBRA candidate,Invoice approved,Invoice lifecycle,Unexpected event order,Special approvals,REVIEW,DEMO-PROOF-001,Negative and clean fixtures,AP Owner,TO VALIDATE
+DET-002,Fraud Assurance,Replay scenario,OVERLAY candidate,Repeated authorization,Payment lifecycle,Duplicate event identifier,Permitted retry,REVIEW,DEMO-PROOF-002,Replay fixtures,Security Owner,TO VALIDATE
+DET-003,Payment Assurance,Settlement sequence,OVERLAY candidate,Payment settled,Payment lifecycle,Missing execution event,Delayed stream,REVIEW,DEMO-PROOF-003,Out-of-order event tests,Payments Owner,TO VALIDATE
+DET-004,Core Algebra,Canonical normalization,ALGEBRA,Input word,Generator list,Reduction invariance under identities,Invalid alphabet,PROOF CHECK,DEMO-PROOF-004,Property tests / implementation bridge,Formal Reviewer,NOT RUN
