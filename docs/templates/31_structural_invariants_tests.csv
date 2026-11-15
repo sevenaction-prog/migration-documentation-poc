@@ -1,0 +1,5 @@
+Invariant ID,Business relation,Establishment obligation,Preservation obligation,Criticality,Start system,End system,Test ID,Expected evidence,Actual result,Status,Owner role,Remediation
+INV-001,Approval belongs to case,Approval case ID is valid,Approval case ID propagates to activation,CRITICAL,Approval Service,Activation Service,SCE-T01,Linked approval ID in both states,NOT TESTED,UNKNOWN,Process Owner,Confirm payload and re-test
+INV-002,Identity authority,Customer identity is verified,Authorized identity remains same through downstream workflow,HIGH,Identity Registry,Case Registry,SCE-T02,Source identifier and reconciliation trail,NOT TESTED,UNKNOWN,Data Owner,Identify authoritative ID
+INV-003,Temporal validity,Approval is valid on decision date,Approval not accepted outside validity window,HIGH,Approval Service,Activation Service,SCE-T03,Effective-from/to and decision date,NOT TESTED,UNKNOWN,Compliance Owner,Confirm rule and bounds
+INV-004,Audit reconstruction,Creation event is linked to owner,All derived events retain trace identifier,HIGH,Event Gateway,Audit Store,SCE-T04,Reproducible trace chain,NOT TESTED,UNKNOWN,Audit Owner,Collect event extracts

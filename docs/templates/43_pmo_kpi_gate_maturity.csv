@@ -1,0 +1,6 @@
+Measure ID,Measure type,Dimension,Definition / gate criterion,Formula or scoring guide,Unit,Frequency,Baseline,Target,Owner role,Data source,Approval status
+KPI-EX-01,KPI,Schedule,Schedule variance,(EV-PV)/PV,ratio,Monthly,TO MEASURE,TO VALIDATE,PMO Lead,Portfolio Data,TO VALIDATE
+KPI-EX-02,KPI,Benefits,Realized benefits amount,Sum of approved benefit receipts,EUR,Quarterly,TO MEASURE,TO VALIDATE,Benefits Owner,Finance Evidence,TO VALIDATE
+GATE-EX-01,GATE,Initiation,Signed charter and sponsor,Pass only with evidence,boolean,At gate,NOT DONE,PASS,Portfolio Board,Charter,TO VALIDATE
+GATE-EX-02,GATE,Pre-delivery,UAT and rollback documented,Pass only with evidence,boolean,At gate,NOT DONE,PASS,Delivery Owner,UAT and Runbook,TO VALIDATE
+MAT-EX-01,MATURITY,Governance,Documented approval rights,1 absent / 3 informal / 5 approved,score,Annual,TO MEASURE,TO VALIDATE,PMO Lead,Interviews,TO VALIDATE

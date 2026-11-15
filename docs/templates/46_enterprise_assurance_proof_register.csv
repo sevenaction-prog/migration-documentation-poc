@@ -1,0 +1,6 @@
+Assertion ID,Claim or property,Claim scope,Proof needed,Source candidate,Dataset version,Runtime version,Test case,Actual result,Independent reviewer,Legal applicability,Decision,Finding
+PRF-001,Unique canonical representation,Mathematical model,Proof assumptions and implementation conformance,Core property tests,DEMO-SET,DEMO-CODE,ALG-001,NOT TESTED,TO ASSIGN,NOT APPLICABLE,TO VALIDATE,
+PRF-002,Zero false positives,Classifier on specified labeled sample,Confusion matrix labeled corpus independent review,Qualification benchmark,DEMO-SET,DEMO-CODE,CLAIM-001,NOT TESTED,TO ASSIGN,TO VALIDATE,TO VALIDATE,
+PRF-003,Sub-10-microsecond latency,Specified hardware and event size,Reproducible benchmarking harness,Benchmark record,DEMO-SET,DEMO-CODE,PERF-001,NOT TESTED,TO ASSIGN,NOT APPLICABLE,TO VALIDATE,
+PRF-004,Control mapping compliance,Applicable jurisdiction/control,Current official legal references and expert sign-off,Compliance crosswalk,DEMO-SET,DEMO-CODE,REG-001,NOT TESTED,TO ASSIGN,TO VALIDATE,TO VALIDATE,
+PRF-005,Biometric anomaly detection,Specific authorized feature,Privacy assessment fairness and controls,Privacy design,DEMO-SET,DEMO-CODE,PRIV-001,NOT TESTED,TO ASSIGN,TO VALIDATE,TO VALIDATE,

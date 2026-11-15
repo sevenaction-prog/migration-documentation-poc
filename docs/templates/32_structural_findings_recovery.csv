@@ -1,0 +1,4 @@
+Finding ID,Invariant ID,Observation,Source ID,Assessment status,Business consequence,Priority,Root cause candidate,Recovery action,Owner role,Retest case,Resolution evidence,Decision
+F-001,INV-001,Approval reference missing from fictional downstream view,DEMO-API-01,SYNTHETIC DEMO,Unable to demonstrate authorization preservation,CRITICAL,Loss during transformation,Add relation reference and validate consumers,Integration Owner,SCE-T01,TO COLLECT,OPEN
+F-002,INV-002,Authority unresolved across mock systems,DEMO-OWNER-01,TO VALIDATE,Potential identity divergence,HIGH,No approved source of truth,Agree owner and canonical identity,Data Owner,SCE-T02,TO COLLECT,OPEN
+F-003,INV-003,Validity-window semantics not yet documented,DEMO-RULE-01,UNKNOWN,Unknown stale-approval behavior,MEDIUM,No approved time rule,Obtain formal business rule,Compliance Owner,SCE-T03,TO COLLECT,OPEN

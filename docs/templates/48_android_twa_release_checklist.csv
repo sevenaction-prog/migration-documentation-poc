@@ -1,0 +1,9 @@
+Check ID,Domain,Check / requirement,Evidence needed,Result,Owner role,Risk,Action
+MOB-001,Web origin,HTTPS domain reachable,Live URL and TLS validation,NOT TESTED,Web Owner,HIGH,Verify hosted web source
+MOB-002,Domain verification,Digital Asset Links association,Assetlinks file plus signing certificate fingerprint,NOT TESTED,Android Owner,HIGH,Check package/domain relationship
+MOB-003,Permission,Fine/coarse location justified,Feature rationale and permission handling,NOT TESTED,Product Owner,HIGH,Remove permission if unused
+MOB-004,Build,Version and release reproducibility,Gradle build logs and signed package,NOT TESTED,Android Engineer,MEDIUM,Run clean build
+MOB-005,Install,Device installation succeeds,Install and PlayProtect test record,NOT TESTED,QA,MEDIUM,Test install and upgrade
+MOB-006,Offline,Network failure behavior is safe,Offline screenshots and logs,NOT TESTED,QA,MEDIUM,Test no-network scenario
+MOB-007,Privacy,Web storage and authentication reviewed,App source and privacy analysis,NOT TESTED,Security Owner,HIGH,Inspect hosted PWA
+MOB-008,Security,FileProvider exposure reviewed,Provider config and sharing test,NOT TESTED,Android Owner,HIGH,Check share grants

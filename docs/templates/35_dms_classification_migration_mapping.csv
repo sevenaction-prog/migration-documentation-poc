@@ -1,0 +1,5 @@
+Record ID,Source folder example,Document class,Observed business activity,Canonical process candidate,Document nature,AS-IS status,TO-BE library candidate,Metadata proposal,Access candidate,Retention status,Disposition proposal,Evidence status,Decision owner
+MAP-001,DEMO:/operations/cases,Approval evidence,Case completion,Case management,Signed record,ACTIVE,Operations case library,CaseID;DocumentType;Status,Restricted,TO VALIDATE,MIGRATE,PROPOSED,Process Owner
+MAP-002,DEMO:/reference/templates,Form template,Template maintenance,Information governance,Reusable template,ACTIVE,Controlled reference,TemplateType;Version;Approved,Internal,TO VALIDATE,MIGRATE CONTROLLED,PROPOSED,Records Owner
+MAP-003,DEMO:/archive/historical,Historical report,Reporting,Reporting records,Historic record,ARCHIVE,Archive repository candidate,Year;Source;Disposition,Limited,TO VALIDATE,HOLD,TO VALIDATE,Records Owner
+MAP-004,DEMO:/tmp,Temp file,Technical process,IT artefact,Temporary,UNKNOWN,Exclude candidate,TechnicalFlag,IT only,TO VALIDATE,REVIEW ROT,INFERRED,IT Owner

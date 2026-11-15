@@ -1,0 +1,5 @@
+Object ID,Object label,Identifier (fictional),Related object,Relation kind,Cardinality candidate,Authoritative system,Validity rule,Source evidence,Provenance,Owner role,Status
+OBJ-01,Case,CASE-DEMO-01,Approval,Authorizes,1:N candidate,Case Registry,Approval references case,DEMO-SCHEMA-01,DOCUMENTED,Case Owner,TO VALIDATE
+OBJ-02,Approval,APP-DEMO-01,Case,Applies to,N:1 candidate,Approval Service,Authorizing decision must retain case ID,DEMO-SCHEMA-01,INFERRED,Compliance Owner,TO VALIDATE
+OBJ-03,Activation,ACT-DEMO-01,Approval,Requires authorization,N:1 candidate,Activation Service,Approval ID required at activation,DEMO-API-01,PROPOSED,Process Owner,TO VALIDATE
+OBJ-04,Customer,CUST-DEMO-01,Case,Initiates,1:N candidate,Identity Registry,Same customer reference across flows,DEMO-MANIFEST-01,ASSUMED,Data Owner,TO VALIDATE

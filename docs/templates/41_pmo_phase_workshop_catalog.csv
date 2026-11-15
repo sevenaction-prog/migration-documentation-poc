@@ -1,0 +1,15 @@
+Phase,Domain,Workshop,Expected output,Preparation,Evidence,Owner role,Decision gate
+PMO-01,Maturity Assessment,Health Check,Maturity diagnostic,Interview representatives,Maturity questionnaire,PMO Lead,TO VALIDATE
+PMO-02,Charter and Operating Model,PMO Canvas,Charter and service catalog,Mandate proposal,Approval record,Executive Sponsor,TO VALIDATE
+PMO-03,Governance Framework,Governance Sprint,Authority RACI,Decision map,Governance record,Governance Owner,TO VALIDATE
+PMO-04,Portfolio and Demand,Prioritization Workshop,Intake register,Request samples,Scoring decision,Portfolio Board,TO VALIDATE
+PMO-05,Delivery Standards,Methodology Workshop,Tailoring standards,Current method,Method approval,Delivery Lead,TO VALIDATE
+PMO-06,Resources,Capacity Sprint,Resource plan,Capacity data,Plan sign-off,Resource Owner,TO VALIDATE
+PMO-07,Financials and Benefits,Benefits Workshop,Benefits register,Baseline definitions,Finance approval,Benefits Owner,TO VALIDATE
+PMO-08,RAID and Dependencies,Risk Workshop,RAID register,Known dependencies,Risk ownership,PMO Lead,TO VALIDATE
+PMO-09,KPI Reporting,Dashboard Sprint,KPI definitions,Available sources,KPI data lineage,Reporting Owner,TO VALIDATE
+PMO-10,Stakeholder and Change,Alignment Workshop,Engagement plan,Stakeholder map,Communication sign-off,Change Lead,TO VALIDATE
+PMO-11,Tool Enablement,Tool Evaluation,Tool decision,Requirements and costs,Technical review,IT Owner,TO VALIDATE
+PMO-12,Regulatory Alignment,Control Workshop,Candidate control map,Applicability questions,Legal review,Compliance Owner,TO VALIDATE
+PMO-13,Knowledge and Lessons,Retrospective,Lessons catalog,Project retrospectives,Review decision,PMO Lead,TO VALIDATE
+PMO-14,Value and Roadmap,PMO Value Story,Improvement roadmap,Cost-benefit baseline,Executive validation,Executive Sponsor,TO VALIDATE

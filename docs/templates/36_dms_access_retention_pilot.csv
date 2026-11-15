@@ -1,0 +1,5 @@
+Control ID,Document family,Who creates,Who reads,Who approves,Confidentiality candidate,Inheritance exception,Retention authority,Disposition decision,Pilot test,Expected result,Owner role,Status
+ACC-01,Case evidence,Case Officer,Authorized team,Case Owner,Restricted,TO VALIDATE,TO VALIDATE,MIGRATE,PILOT-01,No unauthorized access,Security Owner,TO VALIDATE
+ACC-02,Official templates,Document Controller,All relevant staff,Process Owner,Internal,No candidate,TO VALIDATE,PUBLISH,PILOT-02,Only approved version visible,Taxonomy Owner,TO VALIDATE
+RET-01,Historical records,Records Officer,Approved audience,Records Owner,Restricted,TO VALIDATE,TO VALIDATE,HOLD,PILOT-03,Retention rule enforced after approval,Records Owner,TO VALIDATE
+PILOT-04,Process documents,Process Owner,Authorized team,Business Sponsor,Internal,TO VALIDATE,TO VALIDATE,MIGRATE,PILOT-04,Metadata search and workflow pass,Test Owner,TO VALIDATE

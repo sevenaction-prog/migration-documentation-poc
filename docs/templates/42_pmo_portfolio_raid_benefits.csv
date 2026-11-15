@@ -1,0 +1,6 @@
+Record ID,Item type,Portfolio initiative,Description,Owner role,Probability,Impact,Dependency to,Baseline value,Target value,Unit,Due date,Status,Provenance
+PRJ-EX-01,PROJECT,DEMO Program Alpha,Portfolio transformation,Portfolio Owner,,,DEMO Program Beta,,,2026-12-31,PROPOSED,SYNTHETIC
+RSK-EX-01,RISK,DEMO Program Alpha,Reference data quality issue,Delivery Lead,MEDIUM,HIGH,,,,2026-11-30,OPEN,SYNTHETIC
+DEP-EX-01,DEPENDENCY,DEMO Program Beta,Platform API required for pilot,Integration Owner,,HIGH,DEMO Program Alpha,,,2026-11-20,TO VALIDATE,SYNTHETIC
+BEN-EX-01,BENEFIT,DEMO Program Alpha,Reduced approval latency,Benefits Owner,,,DEMO Program Beta,10,7,days,2027-03-31,UNMEASURED,SYNTHETIC
+ISS-EX-01,ISSUE,DEMO Program Beta,Test evidence missing,QA Owner,,HIGH,,,,2026-12-01,OPEN,SYNTHETIC

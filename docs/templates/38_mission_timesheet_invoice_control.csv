@@ -1,0 +1,4 @@
+Entry ID,Period,Date,Work type,Hours,Hours per day,Calculated billable days,Timesheet approval,Invoice reference,Rate per day,Amount excl tax,Tax category,Tax rate,Invoice status,Source evidence
+WORK-001,2026-01,2026-01-05,Billable,8,8,1,TO VALIDATE,INV-DEMO-001,500,500,DEMO STANDARD,TO VALIDATE,DRAFT,SYNTHETIC DATA
+WORK-002,2026-01,2026-01-06,Billable,4,8,0.5,TO VALIDATE,INV-DEMO-001,500,250,DEMO STANDARD,TO VALIDATE,DRAFT,SYNTHETIC DATA
+WORK-003,2026-01,2026-01-07,Nonbillable,8,8,0,TO VALIDATE,,500,0,NOT APPLICABLE,TO VALIDATE,EXCLUDED,SYNTHETIC DATA
