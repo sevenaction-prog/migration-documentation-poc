@@ -1,0 +1,5 @@
+UseCase ID,Process,Problem (synthetic),Current baseline,AI / automation candidate,Lower tier alternative,Business value metric,Data readiness,Human owner,Legal review,Security review,Cost assumption,Value assumption,Decision,Proof level
+UC-001,Document triage,Manual sorting of 120 test documents,120 documents/week,Assistive classification,Rules-based taxonomy,Minutes per document,TO VALIDATE,Process Owner,PENDING,PENDING,TO MEASURE,TO MEASURE,PROPOSED,SYNTHETIC
+UC-002,Knowledge lookup,Staff spend time finding approved procedure,TO MEASURE,RAG-assisted search,Improved tagging,Answer with correct citation,TO VALIDATE,Knowledge Owner,PENDING,PENDING,TO MEASURE,TO MEASURE,PROPOSED,SYNTHETIC
+UC-003,Invoice review,Potential duplicate invoices need review,TO MEASURE,Rule-driven anomaly check,Exact duplicate detection,Precision and recall,TO VALIDATE,Finance Owner,PENDING,PENDING,TO MEASURE,TO MEASURE,TO VALIDATE,SYNTHETIC
+UC-004,Meeting preparation,Workshop notes fragmented,TO MEASURE,Meeting-note structuring,Standard meeting template,Time to approved minutes,TO VALIDATE,BA Lead,PENDING,PENDING,TO MEASURE,TO MEASURE,PROPOSED,SYNTHETIC
