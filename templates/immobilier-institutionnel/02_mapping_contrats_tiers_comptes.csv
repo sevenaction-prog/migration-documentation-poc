@@ -1,0 +1,5 @@
+﻿"ID";"Entité";"Champ source générique";"Champ cible proposé";"Type";"Transformation";"Valeur fictive";"Contrôle";"Source maîtresse";"Disponibilité";"Statut";"Décision"
+"MAP-01";"Engagement";"legacy.contract_ref";"target.commitment_ref";"String";"Correspondance directe";"REF-DEMO-001";"Unicité";"Finance";"À confirmer";"Proposé";"Valider"
+"MAP-02";"Tiers";"legacy.landlord_id";"target.legal_entity_key";"String";"Rapprochement";"PARTY-DEMO-02";"Statut valide";"Finance";"À confirmer";"Proposé";"Valider"
+"MAP-03";"Compte";"legacy.account_id";"target.bank_account_key";"String";"Masquage affichage";"ACCOUNT-DEMO-03";"Conformité";"Finance";"À confirmer";"Proposé";"Valider"
+"MAP-04";"Bail";"legacy.end_date";"target.lease_end_date";"Date";"ISO 8601";"2028-12-31";"Fin >= début";"Immobilier";"À confirmer";"Proposé";"Valider"
