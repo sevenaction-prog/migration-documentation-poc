@@ -1,0 +1,7 @@
+Requirement ID,Business requirement,Rule ID,Business rule,Use case,API action,Test ID,Expected result,Status,Owner role,Evidence
+BRQ-101,Retrieve authoritative financial reference,R-101,Use only records returned as active,UC-Create,GET reference,UT-101,Active reference can be associated,RECOMMENDED,Business Owner,Synthetic example
+BRQ-102,Stop progression on invalid reference,R-102,Unresolved references block approval,UC-Approve,GET reference,UT-102,Approval disabled and reason displayed,TO VALIDATE,Process Owner,Synthetic example
+BRQ-103,Handle integration outage,R-103,Network failure cannot create an unverified approval,UC-Approve,GET reference,UT-103,Retry or controlled manual escalation,RECOMMENDED,IT Service Owner,Synthetic example
+BRQ-104,Retain audit trail,R-104,Store decision role and timestamp only,UC-Update,PATCH dossier,UT-104,Action trace without sensitive payload,TO VALIDATE,Compliance Owner,Synthetic example
+BRQ-105,Reconcile reference data,R-105,Flag mismatched identifiers for steward review,UC-Sync,GET master,UT-105,Exceptions appear in reconciliation log,RECOMMENDED,Data Owner,Synthetic example
+BRQ-106,Apply lifecycle validation,R-106,No transition from closed to approved without reopening,UC-Amend,POST change,UT-106,Invalid state change rejected,TO VALIDATE,Process Owner,Synthetic example
