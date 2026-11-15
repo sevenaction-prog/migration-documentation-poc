@@ -34,3 +34,20 @@ Les six sources remises pour analyse ont été regroupées en trois domaines de 
 - **Payment Control Assurance (HeckeGate / PaymentGate)** — matrice des contrôles (25), UAT & evidence chain (26), spécification fonctionnelle (27), registre de validation des allégations (28).
 
 Tous les nouveaux livrables sont générés depuis des sources textuelles **fictives** et ne contiennent ni code source, ni journaux de paiement réels, ni données client. Les affirmations de performance, démonstration mathématique, certifications et conformité doivent être vérifiées par tests indépendants avant toute communication commerciale ou réglementaire. Les documents Word et Excel sont produits par le workflow `scripts/build_office.py` et publiés dans `docs/templates/`.
+
+## Nouveaux kits métier — SCE, DMS, Mission Ops, PMO, Enterprise QA et Android
+
+Les modèles `29` à `48` sont reconstruits en exemples **fictifs** à partir des axes fonctionnels observés dans les huit sources fournies. Il ne s'agit pas de duplications du code ni des jeux de données privés :
+
+- **SCE / Structural Assurance** — guide de preuve des relations (29), modèle des objets (30), invariants/tests (31), constats/remédiations (32).
+- **DMS Control Tower** — playbook des dix workshops (33), matrice workshops (34), classification/migration (35), accès/rétention/pilotage (36).
+- **Mission Operations** — guide de facturation générique (37), timesheets et contrôles (38), rapprochement des encaissements (39).
+- **PMOForge** — guide 14 phases (40), catalogues d'ateliers (41), portefeuille/RAID/bénéfices (42), KPI/maturité/gates (43).
+- **Enterprise Fraud Assurance** — architecture de contrôles (44), catalogue des détecteurs (45), registre de validation des performances/allégations (46).
+- **Android/TWA** — guide de publication (47), checklist permissions/installation (48). **Le code de l'application web hébergée n'était pas inclus dans l'archive Android : fonctionnalités métier non confirmées.**
+
+### Confidentialité et assurance
+
+Tous les chemins, personnes, organismes, montants, processus, ID, règles et exemples dans les nouveaux modèles sont fictifs. Les numéros contractuels, données bancaires et adresses du prototype de facturation ont été exclus. Les études de performance et affirmations réglementaires du projet Hecke ne sont pas considérées comme indépendamment confirmées.
+
+Le site héberge uniquement les modèles Word/Excel et les sources Markdown/CSV qui servent à les générer via GitHub Actions. Aucune archive projet ni code d'application d'origine n'est publié.
