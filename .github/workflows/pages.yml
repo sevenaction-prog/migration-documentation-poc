@@ -6,7 +6,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: document-atlas-publish
+  group: document-atlas-sector-refresh
   cancel-in-progress: true
 jobs:
   build:
