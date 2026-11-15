@@ -1,0 +1,7 @@
+Control ID,Stream type,Stage or trigger,Condition to detect,Expected evidence,Non-applicable cases,Severity candidate,Owner role,Decision status,Regulation candidate,Legal review,Source confidence
+CTL-001,Invoice,Invoice before goods receipt,Chronology unexpectedly inverted,Ordered event timestamps,Services without goods receipt,REVIEW,AP Owner,PROPOSED,Internal control policy,REQUIRED,SYNTHETIC
+CTL-002,Invoice,Approval before payment,Payment occurred without recorded authorization,Approval event and payment event,Delegated approval procedure,REVIEW,Finance Owner,TO VALIDATE,Audit controls,REQUIRED,SYNTHETIC
+CTL-003,Payment,Authenticate then authorize,Authorization lacks required control event,Transaction events,Applicable exemption,REVIEW,Payments Owner,TO VALIDATE,SCA candidate,REQUIRED,SYNTHETIC
+CTL-004,Payment,Execute then settle,Settlement event is inconsistent,Execution and settlement record,Pending settlement,REVIEW,Operations Owner,TO VALIDATE,Reconciliation framework,REQUIRED,SYNTHETIC
+CTL-005,SEPA credit transfer,Payee verification workflow,Mismatch proceeded without documented warning,VoP response plus user decision,Not applicable for some payment types,REVIEW,Payments Owner,TO VALIDATE,VoP candidate,REQUIRED,SYNTHETIC
+CTL-006,Instant payment,Execution timing,Required step absent from observed sequence,Event sequence with time evidence,Not an instant transfer,REVIEW,Payments Owner,TO VALIDATE,Instant-payment controls,REQUIRED,SYNTHETIC

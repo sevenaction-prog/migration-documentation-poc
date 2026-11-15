@@ -1,0 +1,6 @@
+Case ID,Control ID,Payment type,Input events (fictional),Expected structural outcome,Actual outcome,Proof digest,Algorithm version,Source provenance,Control applicability,Reperform procedure,Independent reviewer,Test status,Regulatory assertion,Finding
+TST-001,CTL-002,Invoice,create>match>approve>pay,PASS,,,demo-engine-0.1,Fictional fixture,AP workflow,Replay identical fixture and compare normalized output,TO ASSIGN,NOT RUN,NOT CLAIMED,
+TST-002,CTL-002,Invoice,create>pay>approve,REVIEW,,,demo-engine-0.1,Fictional fixture,AP workflow,Compare event timestamps with approval control,TO ASSIGN,NOT RUN,NOT CLAIMED,
+TST-003,CTL-003,Card,init>authorize>settle,REVIEW,,,demo-engine-0.1,Fictional fixture,Card payment,Check applicability and valid exemptions,TO ASSIGN,NOT RUN,NOT CLAIMED,
+TST-004,CTL-005,SEPA credit transfer,check mismatch>pay,REVIEW,,,demo-engine-0.1,Fictional fixture,SEPA transfer,Verify warning step and beneficiary decision,TO ASSIGN,NOT RUN,NOT CLAIMED,
+TST-005,CTL-005,Card,card-authorization>capture,NOT APPLICABLE,,,demo-engine-0.1,Fictional fixture,Not VoP transfer,Ensure no spurious VoP exception,TO ASSIGN,NOT RUN,NOT CLAIMED,
