@@ -153,5 +153,146 @@
       "Agenda",
       "Decisions"
     ]
+  },
+  {
+    "id": "institution-guide",
+    "title": "Guide BA/FA — transformation financière",
+    "type": "Word",
+    "file": "templates/10_eu_institution_integration_guide.docx",
+    "purpose": "Méthode de migration des référentiels financiers, workflows, données et responsabilités.",
+    "use": "Gouvernance des exigences, contrats d’interface, risques et passation.",
+    "sections": [
+      "Contexte et valeur",
+      "Responsabilités",
+      "AS-IS / TO-BE",
+      "Mapping de données",
+      "Règles bloquantes",
+      "Traçabilité",
+      "UAT",
+      "Handover"
+    ]
+  },
+  {
+    "id": "institution-map",
+    "title": "Mapping des champs — intégration financière",
+    "type": "Excel",
+    "file": "templates/11_institutional_field_mapping.xlsx",
+    "purpose": "Dictionnaire Source → Cible avec huit exemples fictifs et provenance de référence.",
+    "use": "Transformation, contrôle qualité et statut de validation.",
+    "sections": [
+      "Field ID",
+      "Entité",
+      "Source",
+      "Cible",
+      "Transformation",
+      "Source of truth",
+      "Preuve",
+      "Test"
+    ]
+  },
+  {
+    "id": "institution-rules",
+    "title": "Catalogue de règles & traçabilité",
+    "type": "Excel",
+    "file": "templates/12_institutional_rules_traceability.xlsx",
+    "purpose": "Relie exigences, règles métier, use cases, interfaces et tests.",
+    "use": "Grille d’arbitrage avec statuts explicites.",
+    "sections": [
+      "BRQ",
+      "Business rule",
+      "Use case",
+      "API action",
+      "Test ID",
+      "Result",
+      "Statut"
+    ]
+  },
+  {
+    "id": "institution-handover",
+    "title": "Registre de handover & readiness",
+    "type": "Excel",
+    "file": "templates/13_institutional_handover_register.xlsx",
+    "purpose": "Suivi des livrables, owners, dépendances, validations et points bloquants.",
+    "use": "Passation structurée vers la réalisation et le RUN.",
+    "sections": [
+      "Livrable",
+      "Version",
+      "État",
+      "Owner",
+      "Dépendances",
+      "Open item",
+      "Preuve d’acceptation"
+    ]
+  },
+  {
+    "id": "credit-guide",
+    "title": "Guide BA/PO — crédit & API",
+    "type": "Word",
+    "file": "templates/14_consumer_credit_api_governance_guide.docx",
+    "purpose": "Analyse du parcours de financement, catalogue de références et gouvernance des flux.",
+    "use": "Référentiels Produit/Véhicule, backlog et conformité.",
+    "sections": [
+      "Parcours",
+      "Product Owner",
+      "Référentiel Produit",
+      "Référentiel Véhicule",
+      "Contrats API",
+      "Compliance",
+      "DMS",
+      "UAT"
+    ]
+  },
+  {
+    "id": "credit-api",
+    "title": "Référentiels Produit / Véhicule — API",
+    "type": "Excel",
+    "file": "templates/15_consumer_credit_product_vehicle_api.xlsx",
+    "purpose": "Matrice d’attributs de référence, propriétaires, actions API et contrôles.",
+    "use": "Huit exemples fictifs sans paramètres de crédit réels.",
+    "sections": [
+      "Domain",
+      "Entity",
+      "Attribute",
+      "Owner",
+      "API action",
+      "Validation",
+      "Consumer",
+      "Statut"
+    ]
+  },
+  {
+    "id": "credit-backlog",
+    "title": "Backlog Agile & scénarios UAT",
+    "type": "Excel",
+    "file": "templates/16_consumer_credit_agile_backlog.xlsx",
+    "purpose": "Sept user stories fictives de gouvernance, parcours, APIs et conformité.",
+    "use": "Critères d’acceptation, dépendances et risques.",
+    "sections": [
+      "Epic",
+      "Role",
+      "Need",
+      "Value",
+      "Acceptance",
+      "Dependency",
+      "Compliance gate",
+      "Test"
+    ]
+  },
+  {
+    "id": "credit-dms",
+    "title": "DMS — classification & contrôle",
+    "type": "Excel",
+    "file": "templates/17_consumer_credit_dms_control.xlsx",
+    "purpose": "Familles documentaires, versioning, droits, durée de conservation et source de vérité.",
+    "use": "Modèle de gouvernance DMS pour référentiels et dossiers.",
+    "sections": [
+      "Document family",
+      "Classification",
+      "Metadata",
+      "Lifecycle",
+      "Access",
+      "Retention",
+      "Source of truth"
+    ]
   }
 ]

@@ -1,0 +1,8 @@
+Deliverable ID,Workstream,Deliverable type,Version,State,Owner role,Dependencies,Open item,Acceptance evidence,Next action
+H-001,Requirements,Business requirements baseline,1.0 DRAFT,FOR REVIEW,Business Owner,Workshop sign-off,Clarify priority ordering,Approval record,Obtain business validation
+H-002,Functional,Workflow and use cases,1.0 DRAFT,FOR REVIEW,BA Lead,Process map,Exceptional amendments unconfirmed,Use-case walkthrough,Close scenario gaps
+H-003,Data,Field mapping register,1.0 DRAFT,TO VALIDATE,Data Owner,Source dictionary,Nullability rule pending,Field-by-field decision,Assign open fields
+H-004,Integration,Interface contract,0.8 DRAFT,TO VALIDATE,Integration Architect,API design,Timeout and retry policy pending,Technical sign-off,Test outage paths
+H-005,Rules,Business rules catalog,1.0 DRAFT,FOR REVIEW,Process Owner,BRQ approval,Blocking controls need approval,Rule decision log,Obtain compliance review
+H-006,Testing,UAT scenarios,0.9 DRAFT,TO VALIDATE,UAT Lead,Stable test environment,Negative scenarios incomplete,Signed test protocol,Expand test matrix
+H-007,Knowledge,Runbook and successor handover,0.5 DRAFT,IN PROGRESS,Service Owner,Production monitoring,Alert ownership unresolved,Run-team acceptance,Transfer knowledge
