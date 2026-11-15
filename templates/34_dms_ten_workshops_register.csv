@@ -1,0 +1,11 @@
+Workshop ID,Theme,Workshop objective,Pre-read,Roles required,Expected output,Open decision,Approval owner,Evidence status
+WS-01,Mission and Governance,Align mission boundaries,Scope proposal,Business sponsor and BA,Charter and RACI,Confirm sign-off authority,Project Sponsor,PROPOSED
+WS-02,Repository Discovery,Identify AS-IS repositories,Technical inventory,Repository owner and BA,Repository register,Confirm missing locations,Business Owner,TO VALIDATE
+WS-03,Document Lifecycle,Describe document states,Sample document classes,Process Owner and BA,Process-to-document map,Confirm final records,Process Owner,TO VALIDATE
+WS-04,Taxonomy,Agree standard terms,Observed vocabulary,Taxonomy Owner and BA,Terms and class catalog,Resolve synonyms,Taxonomy Owner,TO VALIDATE
+WS-05,Access Intent,Collect role rights,Current permission extracts,Security and Business Owner,Access matrix,Confirm restricted cases,Security Owner,TO VALIDATE
+WS-06,Records and Retention,Map records obligations,Records samples,Legal and Records Owner,Retention questions,Agree schedule,Records Owner,TO VALIDATE
+WS-07,TO-BE Information Model,Challenge libraries and metadata,Proposed IA,Architect and Process Owner,Target model,Approve structural choices,Architecture Owner,PROPOSED
+WS-08,Migration Disposition,Resolve source to target actions,Inventory and exceptions,Migration and Business Owner,Disposition mapping,Approve HOLD list,Migration Owner,TO VALIDATE
+WS-09,Pilot and UAT,Decide trial readiness,Test cases and representative sample,Key User and IT,UAT plan and pilot gate,Confirm rollback,Test Owner,TO VALIDATE
+WS-10,Closure and Benefits,Validate evidence and value,Acceptance evidence,Business Sponsor and BA,Closure report,Confirm benefit realization,Business Sponsor,TO VALIDATE
