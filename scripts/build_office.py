@@ -214,6 +214,24 @@ def main():
         ("17","consumer_credit_dms_control","Consumer Credit - DMS Control"),
     ]:
         make_csv_template(n,n+"_"+stem+".csv",n+"_"+stem+".xlsx",title)
+    # Public-safe templates reconstructed from the three uploaded POC families.
+    for n,stem,title in [
+        ("18","ai_delivery_14_phase_guide","AI Delivery - 14 Phase Method"),
+        ("21","ai_prompt_rag_eval_spec","AI - Prompt RAG Evaluation Specification"),
+        ("24","junior_document_discovery_workshop","Junior BA - Documentary Workshop Guide"),
+        ("27","payment_assurance_functional_spec","Payment Control Assurance - Functional Requirements"),
+    ]:
+        md_to_docx(n+"_"+stem+".md",n+"_"+stem+".docx",title)
+    for n,stem,title in [
+        ("19","ai_use_case_roi_canvas","AI - Use Case and ROI Canvas"),
+        ("20","ai_eval_hitl_risk_register","AI - Evals HITL and Risk"),
+        ("22","junior_discovery_repository_document","Junior BA - Repositories and Documents"),
+        ("23","junior_workflow_interface_decisions","Junior BA - Workflow and Decisions"),
+        ("25","payment_control_mapping","Payment - Control Mapping"),
+        ("26","payment_test_evidence_chain","Payment - Evidence and Reperformance"),
+        ("28","payment_claims_validation","Payment - Claims Validation Register"),
+    ]:
+        make_csv_template(n,n+"_"+stem+".csv",n+"_"+stem+".xlsx",title)
     print("Office templates generated:", sorted(x.name for x in SRC.glob("*.xlsx")) + sorted(x.name for x in SRC.glob("*.docx")))
 
 if __name__ == "__main__":
