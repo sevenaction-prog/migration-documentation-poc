@@ -1,0 +1,4 @@
+﻿"ID";"Domaine";"Point ouvert";"Impact";"Priorité";"Arbitrage A";"Arbitrage B";"Décideur";"Dépendance";"Statut";"Preuve"
+"GAP-01";"Contrat";"Périodicité non confirmée";"Calcul échéances";"Haute";"Source financière";"Champ local";"Finance";"Validation du payload";"Ouvert";"Décision signée"
+"GAP-02";"Workflow";"Transcodification des statuts";"Continuité";"Haute";"Règle automatique";"Revue manuelle";"Métier";"Cas de test";"Ouvert";"Matrice validée"
+"GAP-03";"Conformité";"Délai de rafraîchissement";"Risque opérationnel";"Haute";"Blocage";"Revalidation explicite";"Compliance";"Politique validée";"Ouvert";"Compte rendu"
