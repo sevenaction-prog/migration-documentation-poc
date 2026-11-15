@@ -232,6 +232,33 @@ def main():
         ("28","payment_claims_validation","Payment - Claims Validation Register"),
     ]:
         make_csv_template(n,n+"_"+stem+".csv",n+"_"+stem+".xlsx",title)
+    # Reusable synthetic project kits; no original source code or private data.
+    for n,stem,title in [
+        ("29","structural_assurance_assessment_guide","Structural Assurance - Assessment Guide"),
+        ("33","dms_control_tower_workshop_playbook","DMS Control Tower - Workshop Guide"),
+        ("37","consulting_mission_billing_playbook","Mission Operations - Billing Playbook"),
+        ("40","pmo_portfolio_governance_playbook","PMO - Portfolio Governance Guide"),
+        ("44","enterprise_fraud_assurance_architecture","Enterprise Fraud - Assurance Architecture"),
+        ("47","mobile_twa_release_governance","Mobile TWA - Release Governance"),
+    ]:
+        md_to_docx(n+"_"+stem+".md",n+"_"+stem+".docx",title)
+    for n,stem,title in [
+        ("30","structural_model_relations","Structural Assurance - Model and Relations"),
+        ("31","structural_invariants_tests","Structural Assurance - Invariants and Tests"),
+        ("32","structural_findings_recovery","Structural Assurance - Findings and Recovery"),
+        ("34","dms_ten_workshops_register","DMS - Ten Workshops"),
+        ("35","dms_classification_migration_mapping","DMS - Classification and Mapping"),
+        ("36","dms_access_retention_pilot","DMS - Access Retention and Pilot"),
+        ("38","mission_timesheet_invoice_control","Mission - Timesheets and Invoice Controls"),
+        ("39","mission_billing_reconciliation","Mission - Billing Reconciliation"),
+        ("41","pmo_phase_workshop_catalog","PMO - Phase and Workshop Catalog"),
+        ("42","pmo_portfolio_raid_benefits","PMO - Portfolio RAID and Benefits"),
+        ("43","pmo_kpi_gate_maturity","PMO - KPI Gate and Maturity"),
+        ("45","enterprise_detector_catalog","Enterprise Assurance - Detector Catalog"),
+        ("46","enterprise_assurance_proof_register","Enterprise Assurance - Evidence and Claims"),
+        ("48","android_twa_release_checklist","Android TWA - Release Checklist"),
+    ]:
+        make_csv_template(n,n+"_"+stem+".csv",n+"_"+stem+".xlsx",title)
     print("Office templates generated:", sorted(x.name for x in SRC.glob("*.xlsx")) + sorted(x.name for x in SRC.glob("*.docx")))
 
 if __name__ == "__main__":
