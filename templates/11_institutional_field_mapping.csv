@@ -1,0 +1,9 @@
+Field ID,Business entity,Source field,Target field,Type,Transformation / validation,Source of truth,Status,Evidence,Owner role,Test scenario
+F-001,Commitment,legacy_commitment_id,financial_reference_id,String,Trim and reject blank,Financial master,RECOMMENDED,Synthetic example,Finance Data Owner,Match valid commitment
+F-002,Third party,legacy_party_code,master_party_id,String,Resolve through reference service,Party master,TO VALIDATE,Synthetic example,Third-party Data Owner,Unknown party returns controlled error
+F-003,Payment account,legacy_account_ref,account_reference,String,Reference lookup; no account details in logs,Payments master,TO VALIDATE,Synthetic example,Payments Data Owner,Invalid or restricted account is blocked
+F-004,Budget line,legacy_budget_code,budget_line_id,String,Map by validity date,Budget master,RECOMMENDED,Synthetic example,Budget Data Owner,Inactive budget line excluded
+F-005,Commitment,legacy_status,commitment_status,Choice,Translate approved lifecycle states,Financial master,TO VALIDATE,Synthetic example,Process Owner,Unknown status handled explicitly
+F-006,Third party,legacy_name,display_name,String,Normalize whitespace only,Party master,RECOMMENDED,Synthetic example,Data Steward,Unicode names round-trip
+F-007,Commitment,legacy_amount,authorized_amount,Decimal,Preserve currency and rounding policy,Financial master,TO VALIDATE,Synthetic example,Finance Owner,Precision and currency reconciliation
+F-008,Budget line,legacy_last_changed,source_updated_at,DateTime,Convert to UTC with source zone,Financial master,RECOMMENDED,Synthetic example,Integration Lead,Time zone transition reconciliation
