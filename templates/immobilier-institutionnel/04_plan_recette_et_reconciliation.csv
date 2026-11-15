@@ -1,0 +1,5 @@
+﻿"Test ID";"Domaine";"Scénario";"Précondition";"Action";"Résultat attendu";"AS-IS";"TO-BE";"Tolérance";"Criticité";"Statut";"Preuve";"Approbateur"
+"UAT-01";"Référence";"Identifiant inconnu";"Référence fictive absente";"Rechercher";"Erreur claire sans écriture silencieuse";"";"";"Exact";"Majeure";"À exécuter";"";"Métier"
+"UAT-02";"Conformité";"Tiers signalé";"Tiers de test signalé";"Soumettre";"Bloquer selon politique approuvée";"";"";"Aucune";"Critique";"À exécuter";"";"Compliance"
+"UAT-03";"Finance";"Montant incohérent";"Source différente de cible";"Rapprocher";"Écart tracé et expliqué";"";"";"À définir";"Majeure";"À exécuter";"";"Finance"
+"UAT-04";"Concurrence";"Mises à jour simultanées";"Deux versions";"Enregistrer";"Aucun écrasement silencieux";"";"";"Aucune";"Majeure";"À exécuter";"";"Product Owner"
