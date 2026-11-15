@@ -474,5 +474,309 @@
       "Independent review",
       "Status"
     ]
+  },
+  {
+    "id": "sce-guide",
+    "title": "SCE — guide d'évaluation structurelle",
+    "type": "Word",
+    "file": "templates/29_structural_assurance_assessment_guide.docx",
+    "purpose": "Preuve du maintien des relations métier à travers des systèmes.",
+    "use": "Établissement, préservation et conclusions traçables.",
+    "sections": [
+      "Intake",
+      "Relations",
+      "Autorité",
+      "Invariants",
+      "Preuves",
+      "Findings"
+    ]
+  },
+  {
+    "id": "sce-relations",
+    "title": "SCE — modèle des objets et relations",
+    "type": "Excel",
+    "file": "templates/30_structural_model_relations.xlsx",
+    "purpose": "Registre de candidats relations métier et sources de vérité.",
+    "use": "Modèle AS-IS structuré et statut des preuves.",
+    "sections": [
+      "Object ID",
+      "Relations",
+      "Cardinalité",
+      "Autorité",
+      "Provenance",
+      "Statut"
+    ]
+  },
+  {
+    "id": "sce-tests",
+    "title": "SCE — invariants et tests",
+    "type": "Excel",
+    "file": "templates/31_structural_invariants_tests.xlsx",
+    "purpose": "Vérification d'établissement et de préservation.",
+    "use": "Une ligne par invariant et jeu de preuves.",
+    "sections": [
+      "Invariant",
+      "Establishment",
+      "Preservation",
+      "Criticality",
+      "Result"
+    ]
+  },
+  {
+    "id": "sce-findings",
+    "title": "SCE — constats et remédiation",
+    "type": "Excel",
+    "file": "templates/32_structural_findings_recovery.xlsx",
+    "purpose": "Décisions et restauration de la cohérence métier.",
+    "use": "Cause, impact, action et re-test.",
+    "sections": [
+      "Finding",
+      "Consequence",
+      "Recovery",
+      "Owner",
+      "Retest"
+    ]
+  },
+  {
+    "id": "dms-guide",
+    "title": "DMS — guide de 10 workshops",
+    "type": "Word",
+    "file": "templates/33_dms_control_tower_workshop_playbook.docx",
+    "purpose": "Cycle cadrage à clôture, référentiels et arbitrages.",
+    "use": "Séquence d'ateliers et attendus métier.",
+    "sections": [
+      "WS01-10",
+      "Dossiers",
+      "Taxonomie",
+      "Pilotage",
+      "Access"
+    ]
+  },
+  {
+    "id": "dms-workshops",
+    "title": "DMS — matrice des 10 ateliers",
+    "type": "Excel",
+    "file": "templates/34_dms_ten_workshops_register.xlsx",
+    "purpose": "Thèmes, participants par rôle, prérequis et décisions.",
+    "use": "Préparation et suivi des workshops.",
+    "sections": [
+      "Workshop",
+      "Objective",
+      "Pre-read",
+      "Output",
+      "Owner"
+    ]
+  },
+  {
+    "id": "dms-mapping",
+    "title": "DMS — classification & migration",
+    "type": "Excel",
+    "file": "templates/35_dms_classification_migration_mapping.xlsx",
+    "purpose": "Source, famille, processus, cible, sécurité et disposition.",
+    "use": "Matrice détaillée AS-IS / TO-BE.",
+    "sections": [
+      "AS-IS",
+      "Family",
+      "Process",
+      "TO-BE",
+      "Access",
+      "Decision"
+    ]
+  },
+  {
+    "id": "dms-security",
+    "title": "DMS — accès, rétention et pilote",
+    "type": "Excel",
+    "file": "templates/36_dms_access_retention_pilot.xlsx",
+    "purpose": "Droits, exceptions, records et vérification UAT.",
+    "use": "Gate de sécurité et d'acceptation pilote.",
+    "sections": [
+      "Family",
+      "Access",
+      "Retention",
+      "Pilot test",
+      "Status"
+    ]
+  },
+  {
+    "id": "mission-guide",
+    "title": "Mission — procédures de facturation",
+    "type": "Word",
+    "file": "templates/37_consulting_mission_billing_playbook.docx",
+    "purpose": "Prestation vers validation, facture et encaissement.",
+    "use": "Sans coordonnées privées ni clauses contractuelles.",
+    "sections": [
+      "Setup",
+      "Timesheet",
+      "Invoice",
+      "Peppol",
+      "Receivables"
+    ]
+  },
+  {
+    "id": "mission-ts",
+    "title": "Mission — timesheet et facture",
+    "type": "Excel",
+    "file": "templates/38_mission_timesheet_invoice_control.xlsx",
+    "purpose": "Saisie de jours fictifs, rapprochement et contrôles.",
+    "use": "Aucune transaction réelle.",
+    "sections": [
+      "Date",
+      "Hours",
+      "Days",
+      "Rate",
+      "Approval",
+      "Invoice"
+    ]
+  },
+  {
+    "id": "mission-rec",
+    "title": "Mission — rapprochement et impayés",
+    "type": "Excel",
+    "file": "templates/39_mission_billing_reconciliation.xlsx",
+    "purpose": "Timesheet approuvée, facture émise et réception bancaire.",
+    "use": "Suivi des écarts sans données bancaires.",
+    "sections": [
+      "Timesheet",
+      "Invoice",
+      "Transmission",
+      "Receipt",
+      "Variance"
+    ]
+  },
+  {
+    "id": "pmo-guide",
+    "title": "PMO — guide de gouvernance",
+    "type": "Word",
+    "file": "templates/40_pmo_portfolio_governance_playbook.docx",
+    "purpose": "Cadre de 14 phases et 6 gates, mandats et contrôles.",
+    "use": "Capitalisation méthodologique PMOForge.",
+    "sections": [
+      "Charter",
+      "Governance",
+      "Portfolio",
+      "RAID",
+      "Benefits"
+    ]
+  },
+  {
+    "id": "pmo-workshop",
+    "title": "PMO — catalogue des 14 ateliers",
+    "type": "Excel",
+    "file": "templates/41_pmo_phase_workshop_catalog.xlsx",
+    "purpose": "Phases, objectifs, livrables et rôles décisionnels.",
+    "use": "Préparation de l'operating model.",
+    "sections": [
+      "Phase",
+      "Workshop",
+      "Output",
+      "Evidence",
+      "Owner"
+    ]
+  },
+  {
+    "id": "pmo-raid",
+    "title": "PMO — portefeuille, RAID et bénéfices",
+    "type": "Excel",
+    "file": "templates/42_pmo_portfolio_raid_benefits.xlsx",
+    "purpose": "Initiatives, risques, dépendances, enjeux et gains.",
+    "use": "Suivi portefeuille entièrement fictif.",
+    "sections": [
+      "Project",
+      "Risk",
+      "Dependency",
+      "Benefit",
+      "Status"
+    ]
+  },
+  {
+    "id": "pmo-kpi",
+    "title": "PMO — KPI, maturité et gates",
+    "type": "Excel",
+    "file": "templates/43_pmo_kpi_gate_maturity.xlsx",
+    "purpose": "Définitions, calculs, vérification et approbations.",
+    "use": "Matrice scorecard sans indicateurs réels.",
+    "sections": [
+      "KPI",
+      "Formula",
+      "Gate",
+      "Baseline",
+      "Approval"
+    ]
+  },
+  {
+    "id": "ent-guide",
+    "title": "Hecke Enterprise — architecture d'assurance",
+    "type": "Word",
+    "file": "templates/44_enterprise_fraud_assurance_architecture.docx",
+    "purpose": "Moteur, overlays, console, preuves et limites.",
+    "use": "Cas de vérification technique et gouvernance des claims.",
+    "sections": [
+      "Core",
+      "Detectors",
+      "Proof",
+      "Controls",
+      "Deployment"
+    ]
+  },
+  {
+    "id": "ent-detectors",
+    "title": "Hecke Enterprise — catalogue des détecteurs",
+    "type": "Excel",
+    "file": "templates/45_enterprise_detector_catalog.xlsx",
+    "purpose": "Scénarios de contrôles et séparation algèbre/overlay.",
+    "use": "Règles candidates et protocole de test.",
+    "sections": [
+      "Detector",
+      "Engine",
+      "Trigger",
+      "Evidence",
+      "Validation"
+    ]
+  },
+  {
+    "id": "ent-proof",
+    "title": "Hecke Enterprise — validation des claims",
+    "type": "Excel",
+    "file": "templates/46_enterprise_assurance_proof_register.xlsx",
+    "purpose": "Allégations, hypothèses, benchmark et revue indépendante.",
+    "use": "Ne certifie aucun taux de détection.",
+    "sections": [
+      "Claim",
+      "Scope",
+      "Proof needed",
+      "Review",
+      "Decision"
+    ]
+  },
+  {
+    "id": "mobile-guide",
+    "title": "Android TWA — guide de déploiement",
+    "type": "Word",
+    "file": "templates/47_mobile_twa_release_governance.docx",
+    "purpose": "Packaging, Digital Asset Links, permissions et livrables.",
+    "use": "Fonctionnalités web non observées.",
+    "sections": [
+      "Manifest",
+      "TWA",
+      "Asset Links",
+      "Permissions",
+      "Release"
+    ]
+  },
+  {
+    "id": "mobile-tests",
+    "title": "Android TWA — checklist de recette",
+    "type": "Excel",
+    "file": "templates/48_android_twa_release_checklist.xlsx",
+    "purpose": "Tests d’installation, sécurité, permissions et domaine.",
+    "use": "Une checklist pour vérifier avant publication.",
+    "sections": [
+      "Domain",
+      "Build",
+      "Install",
+      "Permissions",
+      "Offline"
+    ]
   }
 ]
