@@ -1,0 +1,8 @@
+Story ID,Epic,Role,Need,Business value,Acceptance criterion,Dependency,Priority,Status,Compliance gate,Test ID
+US-201,Reference services,Distribution advisor,Search active product reference,Reduce cross-channel divergence,Only active product versions are selectable,Product API,MUST,PROPOSED,Reference governance,UT-201
+US-202,Reference services,Partner application,Read vehicle category via API,Reduce manual entry,Unknown vehicle code returns clear business error,Vehicle API,MUST,PROPOSED,No automated override,UT-202
+US-203,Data quality,Product steward,Track reference version,Explain historical decisions,Version and timestamp available on each response,Data catalog,SHOULD,TO VALIDATE,Audit trail,UT-203
+US-204,Customer journey,Operations agent,View missing inputs without sensitive details,Reduce back-and-forth,Response lists needed actions but no personal data leaks,Case management,MUST,TO VALIDATE,Privacy review,UT-204
+US-205,Compliance,Compliance reviewer,Escalate an unresolved verification,Respect regulatory gates,Unverified case cannot progress without approved decision,Compliance workflow,MUST,TO VALIDATE,Human approval,UT-205
+US-206,Resilience,IT support,Diagnose API reference error,Improve recovery time,Correlation ID without confidential payload is logged,Observability,SHOULD,PROPOSED,Security logging,UT-206
+US-207,Change management,Key user,Compare old and new journey,Support adoption,Training case includes negative and happy paths,UAT baseline,COULD,PROPOSED,Training/UAT,UT-207
