@@ -1,0 +1,3 @@
+Reconciliation ID,Period,Approved timesheet reference,Approved days,Invoice reference,Invoice amount excl tax,Transmission channel,Transmission evidence,Acceptance status,Payment receipt reference,Received amount,Outstanding amount,Variance rationale,Next action,Owner role
+REC-001,2026-01,TS-DEMO-001,1.5,INV-DEMO-001,750,STRUCTURED INVOICE PROVIDER,TO COLLECT,UNKNOWN,,0,750,Sample awaiting official issuance,Validate transmission,Billing Owner
+REC-002,2026-02,TS-DEMO-002,2,INV-DEMO-002,1000,STRUCTURED INVOICE PROVIDER,DEMO-ACK,ACCEPTED,DEMO-BANK-001,500,500,Synthetic partial receipt,Reconcile remaining balance,Finance Owner
