@@ -6,7 +6,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: document-atlas-project-kits
+  group: document-atlas-project-family-expansion
   cancel-in-progress: true
 jobs:
   build:
@@ -53,7 +53,7 @@ jobs:
             'assets/decision-workshop-preview.svg']:
             f=root/p
             assert f.exists() and f.stat().st_size>50, f'Missing: {p}'
-          assert len(catalog['templates'] if isinstance(catalog,dict) else catalog)==28
+          assert len(catalog['templates'] if isinstance(catalog,dict) else catalog)==48
           for p in [
             'templates/10_eu_institution_integration_guide.docx',
             'templates/11_institutional_field_mapping.xlsx',
@@ -79,7 +79,30 @@ jobs:
             'templates/28_payment_claims_validation.xlsx']:
             f=root/p
             assert f.exists() and f.stat().st_size>500, f'Missing project model: {p}'
-          print('All 28 synthetic Office assets and preview links present')
+          for p in [
+            'templates/29_structural_assurance_assessment_guide.docx',
+            'templates/30_structural_model_relations.xlsx',
+            'templates/31_structural_invariants_tests.xlsx',
+            'templates/32_structural_findings_recovery.xlsx',
+            'templates/33_dms_control_tower_workshop_playbook.docx',
+            'templates/34_dms_ten_workshops_register.xlsx',
+            'templates/35_dms_classification_migration_mapping.xlsx',
+            'templates/36_dms_access_retention_pilot.xlsx',
+            'templates/37_consulting_mission_billing_playbook.docx',
+            'templates/38_mission_timesheet_invoice_control.xlsx',
+            'templates/39_mission_billing_reconciliation.xlsx',
+            'templates/40_pmo_portfolio_governance_playbook.docx',
+            'templates/41_pmo_phase_workshop_catalog.xlsx',
+            'templates/42_pmo_portfolio_raid_benefits.xlsx',
+            'templates/43_pmo_kpi_gate_maturity.xlsx',
+            'templates/44_enterprise_fraud_assurance_architecture.docx',
+            'templates/45_enterprise_detector_catalog.xlsx',
+            'templates/46_enterprise_assurance_proof_register.xlsx',
+            'templates/47_mobile_twa_release_governance.docx',
+            'templates/48_android_twa_release_checklist.xlsx']:
+            f=root/p
+            assert f.exists() and f.stat().st_size>500, f'Missing new project template: {p}'
+          print('All 48 synthetic Office assets and preview links present')
           PY
       - name: Prepare branch-published site in docs/
         run: |
