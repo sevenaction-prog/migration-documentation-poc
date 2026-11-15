@@ -1,0 +1,4 @@
+﻿"ID fictif";"Famille";"Objet métier";"Système AS-IS";"Identifiant fictif AS-IS";"Cible TO-BE";"Identifiant cible";"Propriétaire métier";"Sensibilité";"Action";"Statut décision";"Preuve requise";"Commentaire"
+"DEMO-001";"Bâtiment";"Bureau institutionnel";"Plateforme Legacy A";"BLD-DEMO-01";"Plateforme immobilière cible";"";"Property Management";"Interne";"Migrer";"À valider";"Inventaire bâtiment";"Exemple fictif"
+"DEMO-002";"Contrat";"Bail de bureaux";"Plateforme Legacy A";"LEASE-DEMO-02";"Plateforme immobilière cible";"";"Administration";"Restreint";"Reprendre et rapprocher";"À valider";"Contrat signé";"Aucune donnée réelle"
+"DEMO-003";"Tiers";"Bailleur";"Référentiel Legacy B";"PARTY-DEMO-03";"Référentiel finance cible";"";"Finance";"Restreint";"Mapper et contrôler";"À valider";"Validation de la fiche tiers";"Identifiants de démonstration"
