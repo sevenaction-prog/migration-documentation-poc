@@ -102,13 +102,15 @@ jobs:
             'templates/48_android_twa_release_checklist.xlsx']:
             f=root/p
             assert f.exists() and f.stat().st_size>500, f'Missing new project template: {p}'
-          print('All 48 synthetic Office assets and preview links present')
+          assert (root/'tools/sce-assessment-desk.html').exists(), 'Missing SCE assessment tool'
+          print('All 48 synthetic Office assets and SCE tool verified')
           PY
       - name: Prepare branch-published site in docs/
         run: |
-          mkdir -p docs/assets docs/templates
+          mkdir -p docs/assets docs/templates docs/tools
           cp index.html catalog.json README.md docs/
           cp assets/*.svg docs/assets/
+          cp tools/sce-assessment-desk.html docs/tools/
           cp templates/*.docx templates/*.xlsx templates/*.pptx templates/*.csv templates/*.md docs/templates/
           touch docs/.nojekyll
       - name: Commit built static site to main branch
