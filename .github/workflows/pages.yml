@@ -1,0 +1,76 @@
+name: Deploy Document Atlas
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: document-atlas-pages
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout public repository
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Office generation libraries
+        run: python -m pip install --disable-pip-version-check python-docx==1.2.0 openpyxl==3.1.5
+      - name: Generate Word and Excel files
+        run: python scripts/build_office.py
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install PowerPoint generation library
+        run: npm install --no-save --no-package-lock pptxgenjs@3.12.0
+      - name: Generate PowerPoint
+        run: node scripts/build_deck.js
+      - name: Validate all public download links
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          root=Path('.')
+          catalog=json.loads((root/'catalog.json').read_text(encoding='utf-8'))
+          files=[root/f'templates/{n:02d}_{suffix}' for n,suffix in []]
+          for p in ['index.html',
+            'templates/01_target_sharepoint_architecture.docx',
+            'templates/02_migration_requirements_template.docx',
+            'templates/03_solution_target_top7_metadata.xlsx',
+            'templates/04_simple_category_family_library_mapping.xlsx',
+            'templates/05_source_to_target_mapping.xlsx',
+            'templates/06_workshop_before_after_comparison.xlsx',
+            'templates/07_detailed_architecture_traceability.xlsx',
+            'templates/08_detailed_document_level_mapping.xlsx',
+            'templates/09_decision_workshop_process_validation.pptx',
+            'assets/architecture-preview.svg',
+            'assets/requirements-preview.svg',
+            'assets/decision-workshop-preview.svg']:
+            f=root/p
+            assert f.exists() and f.stat().st_size>50, f'Missing: {p}'
+          assert len(catalog['templates'])==9
+          print('All nine Office assets and preview links present')
+          PY
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Upload static site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
