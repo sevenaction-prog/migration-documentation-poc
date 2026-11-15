@@ -55,7 +55,7 @@ jobs:
             'assets/decision-workshop-preview.svg']:
             f=root/p
             assert f.exists() and f.stat().st_size>50, f'Missing: {p}'
-          assert len(catalog['templates'])==9
+          assert len(catalog['templates'] if isinstance(catalog,dict) else catalog)==9
           print('All nine Office assets and preview links present')
           PY
       - name: Configure GitHub Pages
