@@ -294,5 +294,185 @@
       "Retention",
       "Source of truth"
     ]
+  },
+  {
+    "id": "ai-guide",
+    "title": "IA & automatisation — guide en 14 phases",
+    "type": "Word",
+    "file": "templates/18_ai_delivery_14_phase_guide.docx",
+    "purpose": "Méthodologie de cadrage à exploitation des systèmes IA.",
+    "use": "Cycle A à D, décisions go/no-go et preuves.",
+    "sections": [
+      "AI Fitness",
+      "Stakeholders",
+      "AS-IS",
+      "ROI",
+      "Données",
+      "Prompt",
+      "HITL",
+      "LLMOps"
+    ]
+  },
+  {
+    "id": "ai-roi",
+    "title": "IA — qualification & ROI",
+    "type": "Excel",
+    "file": "templates/19_ai_use_case_roi_canvas.xlsx",
+    "purpose": "Matrice de cas d’usage, alternatives, coûts et bénéfices mesurables.",
+    "use": "Exemples fictifs, hypothèses à confirmer.",
+    "sections": [
+      "Use case",
+      "Problème",
+      "Baseline",
+      "Alternative",
+      "Bénéfice",
+      "Coût",
+      "Statut"
+    ]
+  },
+  {
+    "id": "ai-eval",
+    "title": "IA — évaluations, risques & HITL",
+    "type": "Excel",
+    "file": "templates/20_ai_eval_hitl_risk_register.xlsx",
+    "purpose": "Golden set de test, garde-fous, revue humaine et risques.",
+    "use": "Scénarios normaux, limites, injections et confidentialité.",
+    "sections": [
+      "Test ID",
+      "Input",
+      "Expected",
+      "Actual",
+      "HITL",
+      "Owner",
+      "Status"
+    ]
+  },
+  {
+    "id": "ai-prompt",
+    "title": "IA — spécification Prompt/RAG/Eval",
+    "type": "Word",
+    "file": "templates/21_ai_prompt_rag_eval_spec.docx",
+    "purpose": "Spécification de prompts et corpus documentaires, mesures et versionnage.",
+    "use": "RAG, jeux de test, refus, revue humaine et gates.",
+    "sections": [
+      "Prompt Spec",
+      "RAG",
+      "Corpus",
+      "Évaluation",
+      "Sécurité",
+      "HITL"
+    ]
+  },
+  {
+    "id": "junior-inventory",
+    "title": "BA Junior — fiches de découverte",
+    "type": "Excel",
+    "file": "templates/22_junior_discovery_repository_document.xlsx",
+    "purpose": "Registre de repositories, types documentaires et contextes métiers.",
+    "use": "Un objet par fiche avec preuve et statut.",
+    "sections": [
+      "Repository",
+      "Document",
+      "Process",
+      "Owner",
+      "Preuve",
+      "Validation"
+    ]
+  },
+  {
+    "id": "junior-flow",
+    "title": "BA Junior — workflow & interfaces",
+    "type": "Excel",
+    "file": "templates/23_junior_workflow_interface_decisions.xlsx",
+    "purpose": "Étapes AS-IS, rôles, transmissions, décisions et exceptions.",
+    "use": "Une ligne par étape, interface ou décision.",
+    "sections": [
+      "Activity",
+      "Actor",
+      "Output",
+      "Interface",
+      "Exception",
+      "Status"
+    ]
+  },
+  {
+    "id": "junior-guide",
+    "title": "BA Junior — guide workshop",
+    "type": "Word",
+    "file": "templates/24_junior_document_discovery_workshop.docx",
+    "purpose": "Atelier de découverte, discipline de preuve et clôture.",
+    "use": "Checklists, questions métier et validation.",
+    "sections": [
+      "Préparation",
+      "Entretien",
+      "Fiches",
+      "Workflow",
+      "Interfaces",
+      "Handover"
+    ]
+  },
+  {
+    "id": "payment-map",
+    "title": "Paiements — matrice des contrôles",
+    "type": "Excel",
+    "file": "templates/25_payment_control_mapping.xlsx",
+    "purpose": "Types de flux, critères, exceptions et applicabilité des contrôles.",
+    "use": "Ne pas confondre contrôle observé et obligation légale.",
+    "sections": [
+      "Control",
+      "Stream",
+      "Trigger",
+      "Expected",
+      "Owner",
+      "Legal review"
+    ]
+  },
+  {
+    "id": "payment-proof",
+    "title": "Paiements — UAT & preuves",
+    "type": "Excel",
+    "file": "templates/26_payment_test_evidence_chain.xlsx",
+    "purpose": "Scénarios structurels, résultat attendu et re-performance.",
+    "use": "Chaîne de preuve non considérée automatiquement probante.",
+    "sections": [
+      "Test",
+      "Input events",
+      "Expected",
+      "Actual",
+      "Digest",
+      "Review"
+    ]
+  },
+  {
+    "id": "payment-guide",
+    "title": "Paiements — spécification fonctionnelle",
+    "type": "Word",
+    "file": "templates/27_payment_assurance_functional_spec.docx",
+    "purpose": "Périmètre d'assurance structurelle, flux et architecture de preuve.",
+    "use": "Distingue shadow/post-hoc de contrôle inline.",
+    "sections": [
+      "Périmètre",
+      "Contrôles",
+      "Données",
+      "Preuves",
+      "Handover",
+      "UAT"
+    ]
+  },
+  {
+    "id": "payment-claims",
+    "title": "Paiements — registre des allégations",
+    "type": "Excel",
+    "file": "templates/28_payment_claims_validation.xlsx",
+    "purpose": "Assertions de performance, preuve mathématique et conformité à vérifier.",
+    "use": "Mesures indépendantes requises avant publication de garanties.",
+    "sections": [
+      "Claim",
+      "Proof needed",
+      "Source",
+      "Owner",
+      "Independent review",
+      "Status"
+    ]
   }
 ]
