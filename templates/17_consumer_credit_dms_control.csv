@@ -1,0 +1,8 @@
+Record ID,Document family,Document example,Owner role,Classification,Required metadata,Life cycle,Access model,Retention,Source of truth,Status
+DOC-201,Product reference,Product_Rule_Example.pdf,Product Owner,Internal,DocumentType;ProductFamily;Version;Status,Review/Approve/Publish/Supersede,Controlled contributors;read-only consumers,TO VALIDATE,Product master,RECOMMENDED
+DOC-202,Vehicle reference,Vehicle_Catalog_Example.xlsx,Vehicle Data Owner,Internal,VehicleCategory;Version;ValidFrom,Review/Publish/Supersede,Controlled data stewards,TO VALIDATE,Vehicle master,RECOMMENDED
+DOC-203,API specification,Reference_API_Spec_Example.yaml,IT Owner,Internal,Interface;Version;Owner;Status,Draft/Review/Approve/Archive,Delivery teams only,TO VALIDATE,API repository,RECOMMENDED
+DOC-204,Customer case evidence,Case_Evidence_Example.pdf,Operations Owner,Restricted,CaseReference;Type;Status;Owner,Collect/Validate/Close/Archive,Case-scoped authorized roles,TO VALIDATE,Case platform,TO VALIDATE
+DOC-205,Compliance decision,Compliance_Check_Example.pdf,Compliance Owner,Highly restricted,CaseReference;Decision;Timestamp,Create/Review/Lock/Archive,Approved compliance roles,TO VALIDATE,Compliance platform,TO VALIDATE
+DOC-206,Workshop baseline,Workshop_Decisions_Example.docx,Project BA,Internal,Version;Approval;Owner,Prepare/Validate/Publish,Project contributors,TO VALIDATE,Controlled project space,RECOMMENDED
+DOC-207,Test evidence,UAT_Reference_Flow_Example.xlsx,UAT Lead,Internal,Requirement;TestId;Result,Prepare/Execute/Sign-off,QA and authorized key users,TO VALIDATE,Test platform,RECOMMENDED
