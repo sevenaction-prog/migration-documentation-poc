@@ -198,6 +198,22 @@ def main():
         make_csv_template(n,n+"_"+stem+".csv",n+"_"+stem+".xlsx",title)
     make_traceability()
     make_detailed_mapping()
+    # Sector-specific fictitious cases inspired by prior domains (never historical client deliverables).
+    md_to_docx("10_eu_institution_integration_guide.md",
+                "10_eu_institution_integration_guide.docx",
+                "Institutional financial integration - BA/FA guide")
+    md_to_docx("14_consumer_credit_api_governance_guide.md",
+                "14_consumer_credit_api_governance_guide.docx",
+                "Consumer credit - reference data and API governance")
+    for n,stem,title in [
+        ("11","institutional_field_mapping","Financial Integration - Field Mapping"),
+        ("12","institutional_rules_traceability","Financial Integration - Rules and Traceability"),
+        ("13","institutional_handover_register","Financial Integration - Handover Register"),
+        ("15","consumer_credit_product_vehicle_api","Consumer Credit - Product Vehicle API Mapping"),
+        ("16","consumer_credit_agile_backlog","Consumer Credit - Agile Backlog"),
+        ("17","consumer_credit_dms_control","Consumer Credit - DMS Control"),
+    ]:
+        make_csv_template(n,n+"_"+stem+".csv",n+"_"+stem+".xlsx",title)
     print("Office templates generated:", sorted(x.name for x in SRC.glob("*.xlsx")) + sorted(x.name for x in SRC.glob("*.docx")))
 
 if __name__ == "__main__":
